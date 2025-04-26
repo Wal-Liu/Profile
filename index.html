@@ -3,19 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Giới thiệu bản thân</title>
+  <title>Giới thiệu bản thân - Dark Mode</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="container">
-    <h1>Xin chào, mình là [Tên bạn]</h1>
-    <p>Mình là sinh viên năm ba ngành Kỹ thuật Dữ liệu, yêu thích lập trình, phân tích dữ liệu và công nghệ điện toán đám mây.</p>
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="modeToggle">
+      <span class="slider round"></span>
+    </label>
+    <span class="toggle-text">Dark Mode</span>
+  </div>
+
+  <div class="profile-card">
+    <img src="https://i.pravatar.cc/150?img=12" alt="Avatar" class="avatar">
+    <h1>[Tên bạn]</h1>
+    <p>Sinh viên Kỹ thuật Dữ liệu | Đam mê công nghệ và sáng tạo</p>
 
     <div class="links">
-      <button onclick="goToLink('https://tuongluu.id.vn')">Blog cá nhân</button>
-      <button onclick="goToLink('https://jupyter.tuongluu.id.vn')">Jupyter Server 1</button>
-      <button onclick="goToLink('https://jupyter.tuongluu.id.vn')">Jupyter Server 2</button>
+      <button onclick="goToLink('https://tuongluu.id.vn')">🌐 Blog cá nhân</button>
+      <button onclick="goToLink('https://jupyter.tuongluu.id.vn')">📘 Jupyter Server 1</button>
+      <button onclick="goToLink('https://jupyter.tuongluu.id.vn')">📗 Jupyter Server 2</button>
     </div>
   </div>
 
