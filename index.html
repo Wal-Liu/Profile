@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Giới thiệu bản thân - Dark Mode</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lưu Vĩnh Tường</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/theme/default/styles.css"  id="theme-style" />
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="load_theme.js" defer></script>
 </head>
 <body>
+  <div id="particles-js"></div>
 
-  <div class="profile-card">
-    <img src="https://github.com/Wal-Liu/Profile/blob/main/avatar/avt.jpg?raw=true" alt="Avatar" class="avatar">
-    <h1>Lưu Vĩnh Tường</h1>
-    <p>Sinh viên Kỹ thuật Dữ liệu | Đam mê công nghệ và sáng tạo</p>
-
-    <div class="links">
-      <button onclick="goToLink('https://blogs.tuongluu.id.vn')">🌐 Blog cá nhân</button>
-      <button onclick="goToLink('CV.html')">📄 CV</button>
-      <button onclick="goToLink('https://jupyter.tuongluu.id.vn')">📘 Jupyter Server</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <div id="theme-container"></div>
+  
+  <script>
+    function goToLink(url) {
+      window.open(url, '_blank');
+    }
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 100 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.2 },
+        size: { value: 3 },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "none",
+          out_mode: "out"
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: false },
+          onclick: { enable: false }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
 </body>
 </html>
