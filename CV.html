@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CV - Data Engineer</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background: #fafbfc; color: #222; }
-        h2 { color: #2a4d69; border-bottom: 2px solid #e3e3e3; padding-bottom: 4px; }
-        ul { margin: 0 0 20px 20px; }
-        li { margin-bottom: 6px; }
-        section { margin-bottom: 32px; }
-        .section-title { text-transform: uppercase; font-weight: bold; margin-top: 32px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Luu Vinh Tuong</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/theme/CV/styles.css" />
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <h2>Technical Skills</h2>
+  <div id="particles-js"></div>
+  <main class="cv-wrapper">   
+    <h1>Luu Vinh Tuong</h1>
+    <p>📞 +84.706.384.806 | ✉️ <a href="mailto:tuongst689@gmail.com">tuongst689@gmail.com</a></p>
+    <p>
+      <a href="https://github.com/Wal-Liu">GitHub</a> |
+      <a href="https://www.facebook.com/vinhtuong.luu.1">Facebook</a> |
+      <a href="https://tuongluu.id.vn/">tuongluu.id.vn</a> |
+      <a href="https://www.linkedin.com/in/vinhtuongluu689">LinkedIn</a>
+    </p>
+    <p>A final-year student of Data Engineering passionate about data and technology</p>
+
+    <section>
+      <h2>EDUCATION</h2>
+        <div class="edu-row">
+        <div class="edu-left">
+            <strong>HCMC University of Technology and Education</strong><br>
+            <em>Data Engineering</em>
+        </div>
+        <div class="edu-right">
+            <strong>1 Vo Van Ngan, Thu Duc, HCMC</strong><br>
+            <em>Sep 2022 – Expected: 2026</em>
+        </div>
+        </div>
+    </section>
+
+    <div class="section">
+    <h2>TECHNICAL SKILLS</h2>
     <ul>
         <li><b>Programming Languages:</b> Python, SQL, Java, R</li>
         <li><b>Big Data & Frameworks:</b> Apache Hadoop, Flume, Hive, Kafka, Pig, Spark</li>
@@ -25,16 +48,20 @@
         <li><b>Data Visualization:</b> Apache Superset, Power BI</li>
         <li><b>Version Control:</b> Git and GitHub</li>
     </ul>
+</div>
 
-    <h2>Licenses & Certifications</h2>
+<div class="section">
+    <h2>LICENSES & CERTIFICATIONS</h2>
     <ul>
         <li>AWS Academy Graduate - AWS Academy Cloud Data Pipeline Builder</li>
         <li>AWS Academy Graduate - AWS Academy Cloud Developing</li>
         <li>AWS Academy Graduate - AWS Academy Cloud Web Application Builder</li>
         <li>AWS Academy Graduate - AWS Academy Microservices and CI/CD Pipeline Builder</li>
     </ul>
+</div>
 
-    <h2>Cross-Industry Experience</h2>
+<div class="section">
+    <h2>CROSS-INDUSTRY EXPERIENCE</h2>
     <ul>
         <li><b>Marketing:</b>
             <ul>
@@ -62,9 +89,11 @@
             </ul>
         </li>
     </ul>
+</div>
 
-    <h2>Projects</h2>
-    <b>YouTube Watch History Data Pipeline</b>
+<div class="section">
+    <h2>PROJECTS</h2>
+    <div class="project-title"><b>YouTube Watch History Data Pipeline</b></div>
     <ul>
         <li>Collected raw JSON data from Google Takeout, preserving data structure and ensuring data integrity throughout the processing pipeline.</li>
         <li>Designed and implemented a system architecture consisting of Spark Cluster, MinIO + Delta Lake, ClickHouse, and Apache Superset.</li>
@@ -80,8 +109,7 @@
         <li>Deployed a 3-layer data architecture (bronze, silver, gold) stored on MinIO and Delta Lake, ensuring clear data layering, maintaining data integrity, and high data readiness for analytics.</li>
         <li>Visualized data at two stages: post-cleaning and after OLAP system construction, providing insights into peak activity times, popular content topics, and viewing habits by week and month.</li>
     </ul>
-
-    <b>Codeforces Contest Streaming and Classroom Analysis</b>
+    <div class="project-title"><b>Codeforces Contest Streaming and Classroom Analysis</b></div>
     <ul>
         <li>Collected submission data from Codeforces API, including all submissions during and outside contest time, stored in structured JSON format with multiple attributes such as userID for comprehensive analysis.</li>
         <li>Cleaned data using Python to filter valid submissions made within contest duration; remaining data used for post-contest exploratory analysis.</li>
@@ -99,5 +127,33 @@
         <li>Conducted data cleaning, exploratory data analysis (EDA), and visualization using Python and matplotlib. Applied regression models with scikit-learn to analyze and predict contest topics and trends.</li>
         <li>Delivered actionable insights on contest progression and individual participant performance; enabled personalized training curriculum development based on user strengths, weaknesses, and popular topics.</li>
     </ul>
+</div>
+
+  </main>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 100 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.2 },
+        size: { value: 3 },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "none",
+          out_mode: "out"
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: false },
+          onclick: { enable: false }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
 </body>
 </html>
