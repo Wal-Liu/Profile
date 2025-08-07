@@ -8,19 +8,13 @@ window.addEventListener("DOMContentLoaded", () => {
   let layoutPath = "/theme/default/index.html";
   let cssPath = "/theme/default/styles.css";
 
-  if (today >= new Date("2025-04-28") && today <= new Date("2025-5-5")) {
+  if (today >= new Date("2025-04-28") && today <= new Date("2025-05-05")) {
     load_theme("30thang4");
   }
-  else
-    load_theme("default");
 
   if (today >= new Date("2025-09-20") && today <= new Date("2025-09-22")) {
     load_theme("sinhnhat");
   }
-  else
-    load_theme("default");
-
-
   // Cập nhật CSS
   themeLink.setAttribute("href", cssPath);
 
