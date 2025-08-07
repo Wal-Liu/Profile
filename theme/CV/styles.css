@@ -88,3 +88,20 @@ body {
 .edu-right {
   text-align: right;
 }
+.project-title h4 {
+  margin-top: 15px;
+  padding-bottom: -10px;
+  font-size: 22px;
+  font-style:oblique;
+  color: #1abc9c;
+}
+
+.section ul li strong{
+  margin-bottom: 100px;
+  color: #66a1e0;
+}
+
+.section ul li b{
+  margin-bottom: 100px;
+  color: #66a1e0;
+}

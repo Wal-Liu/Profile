@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
   let layoutPath = "/theme/default/index.html";
   let cssPath = "/theme/default/styles.css";
 
-  if (today >= new Date("2025-04-28") && today <= new Date("2025-12-30")) {
+  if (today >= new Date("2025-04-28") && today <= new Date("2025-5-5")) {
     load_theme("30thang4");
   }
 
