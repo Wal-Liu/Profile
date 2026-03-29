@@ -36,105 +36,93 @@
     </section>
 
     <div class="section">
-    <h2>TECHNICAL SKILLS</h2>
-    <ul>
+    <h2 style="color:airforceblue;">TECHNICAL SKILLS</h2>
+    <ul style="list-style: none; padding-left: 0;">
         <li><b>Programming Languages:</b> Python, SQL, Java, R</li>
-        <li><b>Big Data & Frameworks:</b> Apache Hadoop, Flume, Hive, Kafka, Pig, Spark (PySpark)</li>
-        <li><b>Databases:</b> SQL Server, MySQL, ClickHouse</li>
-        <li><b>Cloud Platform:</b> AWS, Azure (Synapse Analytics)</li>
-        <li><b>Storage Platforms:</b> Data Warehouse, Data LakeHouse (Delta Lake)</li>
-        <li><b>Web Scraping:</b> Python Selenium, Python Scrapy</li>
-        <li><b>Python frameworks:</b> PySpark, Scikit-learn, Pandas, NumPy, TensorFlow</li>
-        <li><b>Data Visualization:</b> Apache Superset, Power BI</li>
+        <li><b>Big Data Processing:</b> Apache Hadoop Ecosystem, Apache Spark ecosystem</li>
+        <li><b>AI/ML Libraries:</b> scikit-learn, Spark MLlib, yolov8</li>
+        <li><b>BI Tool:</b> Apache Superset, Power BI</li>
         <li><b>Version Control:</b> Git and GitHub</li>
     </ul>
 </div>
 
 <div class="section">
-    <h2>LICENSES & CERTIFICATIONS</h2>
-    <ul>
-        <li>AWS Academy Graduate - AWS Academy Cloud Data Pipeline Builder</li>
-        <li>AWS Academy Graduate - AWS Academy Cloud Developing</li>
-        <li>AWS Academy Graduate - AWS Academy Cloud Web Application Builder</li>
-        <li>AWS Academy Graduate - AWS Academy Microservices and CI/CD Pipeline Builder</li>
-        <li>TOEIC - 595 (10/2024)</li>
-    </ul>
+    <h2 style="color:airforceblue;">WORK EXPERIENCE</h2>
+
+    <div class="job">
+        <p><strong>Data Engineer - BBOS</strong> <span style="float:right;">December 2025 -- Present</span></p>
+        <ul>
+            <li>Designed and developed a dimensional data warehouse (Star Schema) for daily sales reporting from SAP HANA source data.</li>
+            <li>Built automated ETL data pipelines using Python and SQL Server stored procedures (SCD Type 1/2) from staging to data warehouse.</li>
+            <li>Optimized SQL Server performance and developed logging analysis system for PMS application pipeline monitoring.</li>
+            <li><strong>Results:</strong> Automated weekly reporting dashboards on Apache Superset and Power BI; optimized PMS apps query processing.</li>
+            <li><strong>Technologies:</strong> Python, SQL Server, Stored Procedures, Docker.</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <p><strong>Data Analyst Intern - Sendo Farm</strong> <span style="float:right;">10/2025 -- 1/2026</span></p>
+        <ul>
+            <li>Queried and analyzed operational warehouse data to produce daily, weekly, and monthly performance reports.</li>
+            <li>Built automated visual dashboards and charts, providing insights into warehouse efficiency and inventory accuracy.</li>
+            <li><strong>Result:</strong> Automated weekly reporting workflows, improving visibility on performance metrics and stock discrepancies.</li>
+            <li><strong>Technologies:</strong> Google Sheets, Excel Power Query, Power BI, Superset, Python, SQL</li>
+        </ul>
+    </div>
 </div>
 
 <div class="section">
-    <h2>PROJECTS</h2>
-    <div class="project-title"><h4>YouTube Watch History Data Pipeline</h4></div>
-    <p><strong>Team size:</strong> Solo Project – <a href="#">GitHub repository</a></p>
-    <ul>
-        <li><strong>Description:</strong> Collected raw JSON data from Google Takeout, develop a data platform to clean, analyze and providing insights about customer behavior.</li>
-        <li><strong>Responsibilities:</strong>
-            <ul>
-                <li>Performed data integration, cleansing, validation, and transformation entirely using PySpark, achieving efficient big data processing and faster development cycles compared to Java-based Hadoop systems.</li>
-                <li>Deployed a 3-layer data architecture (bronze, silver, gold) stored on MinIO and Delta Lake, ensuring clear data layering, maintaining data integrity, and high data readiness for analytics.</li>
-                <li>Visualized data at two stages: post-cleaning and after OLAP system construction.</li>
-            </ul>
-        </li>
-        <li><strong>Result:</strong> Providing insights into peak activity times, popular content topics, and viewing habits by week and month.</li>
-        <li><strong>Technology and Key improvements:</strong>
-            <ul>
-                <li><strong>Spark Cluster:</strong> distributed system enabling faster processing of large-scale data compared to traditional Python scripts.</li>
-                <li><strong>MinIO + Delta Lake:</strong> optimized storage with data compression, version control, and enhanced data security.</li>
-                <li><strong>ClickHouse:</strong> high-performance OLAP data warehouse supporting real-time data analytics.</li>
-                <li><strong>Apache Superset:</strong> lightweight, open-source visualization tool with strong integration within the Apache ecosystem.</li>
-            </ul>
-        </li>
-    </ul>
+    <h2 style="color:airforceblue;">PROJECTS</h2>
 
-    <div class="project-title"><h4>Codeforces Contest Streaming and Classroom Analysis</h4></div>
-    <p><strong>Team size:</strong> 5 members – <a href="#">GitHub repository</a></p>
-    <ul>
-        <li><strong>Roles:</strong> Data Engineer</li>
-        <li><strong>Description:</strong> Built a basic data pipeline to automatically collect, transform and store real-time Codeforces contest data. The system performs scheduled ETL to provide live contest insights and analyze long-term trends across historical data.</li>
-        <li><strong>Responsibilities:</strong>
-            <ul>
-                <li>Collected submission data from Codeforces API, including all submissions during and outside contest time, stored in structured JSON format with multiple attributes such as userID for comprehensive analysis.</li>
-                <li>Cleaned data using Python to filter valid submissions made within contest duration; remaining data used for post-contest exploratory analysis.</li>
-                <li>Conducted data cleaning, exploratory data analysis (EDA), and visualization using Python and matplotlib. Applied regression models with scikit-learn to analyze and predict contest topics and trends.</li>
-            </ul>
-        </li>
-        <li><strong>Result:</strong> Delivered actionable insights on contest progression and individual participant performance; enabled personalized training curriculum development based on user strengths, weaknesses, and popular topics.</li>
-        <li><strong>Technology and Key improvements:</strong>
-            <ul>
-                <li><strong>Python:</strong> ingested submission data and streamed it to Kafka in real-time according to contest timeline.</li>
-                <li><strong>Kafka:</strong> provided a robust streaming platform ensuring data integrity under high throughput and system load.</li>
-                <li><strong>Spark Cluster:</strong> processed streaming data for restructuring, cleaning, ETL, and synchronized data between lakehouse and warehouse.</li>
-                <li><strong>ClickHouse:</strong> high-performance OLAP data warehouse supporting fast analytics on streaming data.</li>
-                <li><strong>Grafana:</strong> real-time dashboard for monitoring contest submission trends and system status.</li>
-                <li><strong>MinIO + Delta Lake:</strong> implemented a 3-layer (bronze, silver, gold) storage model optimizing data storage, versioning, and readiness.</li>
-                <li><strong>Apache Superset:</strong> visualized aggregated contest data post-event, enabling comprehensive reporting and insight extraction.</li>
-            </ul>
-        </li>
-    </ul>
-</div>
+    <div class="project">
+        <h4>Video Analysis System <span style="float:right;">Aug/2025 - Dec/2025</span></h4>
+        <p><strong>Team size:</strong> 3 members (Role Data Engineer) – 
+        <a href="https://github.com/Wal-Liu/Video-Analysis-System">GitHub repository</a></p>
+        <ul>
+            <li><strong>Description:</strong> Built an automated traffic camera data collection system with storage and computer vision models for real-time traffic analysis and information extraction.</li>
+            <li><strong>Result:</strong> Achieved 0.5-1s data latency and 24/7 ingestion across diverse camera sources/protocols.</li>
+            <li><strong>Technology:</strong> Python, FFmpeg, Kafka, MinIO, Iceberg, Trino, Grafana.</li>
+        </ul>
+    </div>
 
-<div class="section">
-    <h2>CROSS-INDUSTRY EXPERIENCE</h2>
-    <ul>
-        <li><b>Marketing:</b>
-            <ul>
-                <li>Analyzed customer behavior and usage patterns to understand their shopping needs and preferences.</li>
-                <li>Segmented customers based on purchasing purposes and spending habits, enabling targeted marketing strategies.</li>
-                <li>Explored consumer purchase motivations and identified key factors influencing buying decisions.</li>
-            </ul>
-        </li>
-        <li><b>Finance:</b>
-            <ul>
-                <li>Monitored financial markets and tracked key market indices for comprehensive market overview.</li>
-                <li>Conducted analysis of market trends and macroeconomic indicators to support investment decisions and risk assessment.</li>
-            </ul>
-        </li>
-        <li><b>Education:</b>
-            <ul>
-                <li>Analyzed student performance and test results to identify learning gaps and improve teaching effectiveness.</li>
-                <li>Developed personalized lesson plans based on data-driven insights to enhance individual learning outcomes.</li>
-            </ul>
-        </li>
-    </ul>
+    <div class="project">
+        <h4>Binance Stream Analysis <span style="float:right;">Sep/2025 - Oct/2025</span></h4>
+        <p><strong>Team size:</strong> 5 members (Role Data Engineer) – 
+        <a href="https://github.com/Wal-Liu/Binance-realtime-analytics">GitHub repository</a></p>
+        <ul>
+            <li><strong>Description:</strong> Designed a real-time data pipeline to process Binance WebSocket trading streams for BTC, ETH, and BNB.</li>
+            <li><strong>Result:</strong> Enabled real-time monitoring, technical indicator computation, and anomaly detection.</li>
+            <li><strong>Technology:</strong> Python, Kafka, Spark, Grafana.</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h4>Spotify Music Trend Prediction <span style="float:right;">Sep/2025 - Oct/2025</span></h4>
+        <p><strong>Team size:</strong> 4 members (Role Data Science) – 
+        <a href="https://github.com/Wal-Liu/Spotify-music-trend-prediction">GitHub repository</a></p>
+        <ul>
+            <li><strong>Description:</strong> Analyzed 550K+ Spotify records and built regression models.</li>
+            <li><strong>Result:</strong> Achieved 80%+ prediction accuracy with Random Forest and XGBoost.</li>
+            <li><strong>Technology:</strong> Python, Spark MLlib</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h4>Codeforces Contest Streaming and Classroom Analysis <span style="float:right;">May/2025 - Jun/2025</span></h4>
+        <p><strong>Team size:</strong> 5 members (Role Data Engineer) – 
+        <a href="https://github.com/DOCUTEE/CFBIGDATA">GitHub repository</a></p>
+        <ul>
+            <li><strong>Description:</strong> Built a real-time data pipeline for Codeforces contest data.</li>
+            <li><strong>Responsibilities:</strong>
+                <ul>
+                    <li>Collected data via API and web crawling.</li>
+                    <li>Performed EDA, visualization, and regression modeling.</li>
+                </ul>
+            </li>
+            <li><strong>Result:</strong> Delivered insights and enabled personalized training.</li>
+            <li><strong>Technology Used:</strong> Python, Kafka, PySpark, ClickHouse, Grafana, MinIO + Delta Lake, Superset</li>
+        </ul>
+    </div>
 </div>
 
   </main>
